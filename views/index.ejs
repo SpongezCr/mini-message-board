@@ -1,0 +1,12 @@
+<head>
+
+</head>
+<body>
+    <% for (let i = 0; i < messages.length; i++) { %>
+        <div> <%= `[${messages[i].added}] ${messages[i].user}: ${messages[i].text}\n` %> 
+            <button><a href= <%= "/" + i %>>Details</a></button>
+        </div>
+    <% } %>
+
+    <button><a href="/new">New Message</a></button>
+</body>
